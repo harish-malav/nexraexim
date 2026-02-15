@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #7a2d3d;
+    color: #fff;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar nav a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background: #2f8f83;
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* PRODUCT SECTION */
+.product-section {
+    padding: 40px;
+    background: #f3ffe8;
+}
+
+.product-section h1 {
+    color: #7a2d3d;
+    margin-bottom: 25px;
+}
+
+.product-container {
+    display: flex;
+    gap: 30px;
+}
+
+.product-left {
+    width: 40%;
+}
+
+.product-left img {
+    width: 80%;
+    /* border-radius: 20px; */
+    /* border: 1px solid #aaa; */
+}
+
+.product-left p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* RIGHT INFO */
+.product-right {
+    width: 60%;
+}
+
+.info-box {
+    background: #a8ffd6;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.info-box span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* QUALITY SECTION */
+.quality-section {
+    background: #f4ffe8;
+    padding: 40px;
+}
+
+.quality-section h2 {
+    margin-bottom: 10px;
+}
+
+.quality-section p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.terms .term {
+    background: #fff3a6;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.topic{
+    display: inline-block;
+    width: 30vw;
+}
+/* DEHYDRATED GARLIC SECTION */
+.garlic-section {
+    background: #f3ffe8;
+    padding: 40px;
+}
+
+.garlic-section h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #000;
+}
+
+.garlic-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.arrow {
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.garlic-title {
+    font-weight: bold;
+    min-width: 330px;
+}
+
+.garlic-desc {
+    margin-left: 20px;
+}

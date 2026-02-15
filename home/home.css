@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+.maincontainer {
+  margin: auto;
+}
+
+.container {
+  /* min-height: 100vh; */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("homePageSpices.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.navbar {
+  background: #692c3f;
+  color: #fff;
+  padding: 14px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+
+  select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    option {
+      color: black;
+    }
+  }
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+.btn {
+  background: #1aa37a;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.logo-wrap img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.home-content {
+  max-width: 900px;
+  padding: 120px 60px;
+}
+
+.home-content h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.home-content h1 span {
+  color: #e0c3ff;
+}
+
+/* BUTTONS */
+.home-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.primary {
+  background: #6a2330;
+}
+
+.secondary {
+  background: #2e7d6b;
+}
+
+/* PRODUCTS CATEGORIES SECTION */
+.product-section {
+  background: #eef9e8;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e7d6b;
+  margin-bottom: 6px;
+}
+
+.product-subtitle {
+  font-size: 12px;
+  color: #666;
+  max-width: 900px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-item {
+  width: 180px;
+}
+
+.product-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2e7d6b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-list {
+    justify-content: center;
+  }
+}
+
+/* WHAT MAKES US DIFFERENT – EXACT DESIGN */
+.wmud-section {
+  padding: 40px 0 60px;
+  background: #fff;
+}
+
+/* TOP BAR */
+.wmud-header {
+  background: #eef9e8;
+  border: 2px solid #999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.wmud-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6a2330;
+}
+
+.wmud-header h2 span {
+  color: #2e7d6b;
+}
+
+.wmud-header p {
+  font-size: 11px;
+  color: #555;
+  max-width: 1000px;
+  margin: 6px auto 0;
+  line-height: 1.6;
+}
+
+/* COMMON BOX STYLE */
+.wmud-box {
+  background: #eef9e8;
+  border: 1.5px solid #888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 18px 22px;
+  display: flex;
+  gap: 14px;
+  max-width: 720px;
+  margin: 26px 0;
+}
+
+.wmud-box p {
+  font-size: 12px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.wmud-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* COLORS */
+.maroon {
+  color: #6a2330;
+}
+
+.green {
+  color: #2e7d6b;
+}
+
+.wmud-box span span {
+  color: #2e7d6b;
+}
+
+/* HAND ICON */
+.hand {
+  font-size: 22px;
+  margin-top: 4px;
+}
+
+/* ALIGNMENTS (ZIG-ZAG) */
+.wmud-box.left {
+  margin-left: 40px;
+}
+
+.wmud-box.center {
+  margin-left: 140px;
+}
+
+.wmud-box.right {
+  margin-left: 260px;
+}
+
+.wmud-box.wider {
+  margin-left: 380px;
+  max-width: 860px;
+}
+
+.wmud-box.bottom {
+  margin-left: 480px;
+  max-width: 860px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .wmud-box,
+  .wmud-box.left,
+  .wmud-box.center,
+  .wmud-box.right,
+  .wmud-box.wider,
+  .wmud-box.bottom {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+  }
+}
+
+/* HOW DOES WE WORKS */
+.work-section {
+  padding: 50px 20px 70px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.work-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #556b2f;
+  margin-bottom: 40px;
+}
+
+/* FLOW CONTAINER */
+.work-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* STEP */
+.work-step {
+  flex: 0 0 auto;
+}
+
+.outer {
+  width: 170px;
+  height: 100px;
+  background: #edeaf7;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  width: 140px;
+  height: 70px;
+  background: #8fe0c5;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f6f57;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ARROW */
+.arrow {
+  font-size: 22px;
+  color: #6bbf9c;
+  font-weight: 700;
+  margin: 0 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .work-flow {
+    justify-content: flex-start;
+  }
+}
+
+.faq-section {
+  background-color: #fbf6e6;
+  padding: 70px 120px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #2f7f6b;
+  margin-bottom: 50px;
+}
+
+.faq-section h2 span {
+  color: #7a2c2c;
+}
+
+.faq-item {
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.faq-item h4 {
+  color: #4c6b1f;
+  font-size: 18px;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.faq-item h4::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #4c6b1f;
+}
+
+.faq-item p,
+.faq-item ul {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-left: 25px;
+}
+
+.faq-item ul {
+  padding-left: 18px;
+}
+
+.faq-item ul li {
+  margin-bottom: 6px;
+}
+
+/* --- FOOTER STYLING --- */
+.main-footer {
+  background-color: #692c3f;
+  /* Aapki navbar wala maroon color */
+  color: #ffffff;
+  padding: 60px 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Brand Info Styling */
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-wrap img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+}
+
+.footer-logo-wrap span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-logo-wrap p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footer-description {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #f2f2f2;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  background: #2e7d6b;
+  /* Aapki theme wala teal color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #1aa37a;
+  transform: translateY(-3px);
+}
+
+/* Quick Links Styling */
+.links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-column ul li {
+  margin-bottom: 12px;
+}
+
+.links-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.links-column ul li a:hover {
+  color: #8fe0c5;
+  padding-left: 5px;
+}
+
+/* Contact Info Styling */
+.contact-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.contact-box .icon {
+  font-size: 18px;
+}
+
+.contact-box p {
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+.bottom-left a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-upper {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+.maincontainer {
+  /* height: 4818px;
+  width: 1920px; */
+  margin: auto;
+}
+.navbar {
+  background: #692c3f;
+  color: #fff;
+  padding: 14px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  /* margin-left: 37px; */
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+.btn {
+  background: #1aa37a;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.logo-wrap img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+/* Hero Section */
+.aboutsection {
+  display: flex;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1.2;
+}
+.color {
+  color: #692c3f;
+}
+.about-text h1 {
+  font-size: 42px;
+  color: #7a2e3a;
+  margin-bottom: 20px;
+}
+
+.about-text h3 {
+  color: #7a2e3a;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  text-transform: lowercase;
+}
+
+.about-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.aboutsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* right side wrapper */
+.about-images {
+  position: relative;
+  width: 520px;
+  height: 480px;
+}
+
+/* center image */
+.center {
+  width: 427px;
+  height: 404px;
+  object-fit: cover;
+}
+
+/* small images */
+.small {
+  position: absolute;
+  width: 117px;
+  height: 148px;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: -1;
+}
+/* right image section */
+.about-images {
+  position: relative;
+  width: 520px; /* FIXED WIDTH */
+  height: 520px; /* FIXED HEIGHT */
+  flex-shrink: 0; /* text ke pressure se shrink nahi hoga */
+  height: 590px;
+}
+
+/* center image */
+.center {
+  width: 427px;
+  height: 404px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 90px;
+}
+
+/* common small images */
+.small {
+  position: absolute;
+  width: 117px;
+  height: 148px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* positions (as per 2nd screenshot) */
+.top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left {
+  top: 120px;
+  left: 0;
+}
+
+.right {
+  top: 120px;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 80px;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 80px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .about-images {
+    margin: 40px auto 0;
+    transform: scale(0.9);
+  }
+}
+
+/* Vision Mission */
+.vm-section {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.vision {
+  background: #e9f7df;
+}
+
+.mission {
+  background: #e9f7df;
+}
+
+.card h2 {
+  color: #7a2e3a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  list-style-image: url("icons/li-icon.png");
+
+  padding-left: 20px;
+  margin-left: 24px;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .vm-section {
+    flex-direction: column;
+  }
+}
+.core-values {
+  background: #f2ffd9;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 36px;
+  color: #7a2e3a;
+  margin-bottom: 50px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.value-card {
+  background: #f7ffea;
+  padding: 35px 25px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.value-card h3 {
+  color: #4c6b2f;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.value-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Center big card */
+.center-card {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .center-card {
+    max-width: 100%;
+  }
+}
+.management {
+  padding: 60px 40px;
+  background: #ffffff;
+}
+
+.management h2 {
+  font-size: 32px;
+  color: #7a2e3a;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.management-grid {
+  display: flex;
+  gap: 80px;
+}
+
+/* Card */
+.manager-card {
+  background: #f2ffd9;
+  width: 300px;
+  height: 260px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Placeholder */
+.manager-img {
+  width: 90px;
+  height: 120px;
+  background: #8f8df0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.manager-card h3 {
+  font-size: 14px;
+  color: #4c6b2f;
+  margin-bottom: 2px;
+}
+
+.manager-card p {
+  font-size: 12px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .management-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
