@@ -10,12 +10,8 @@ body {
   color: #333;
 }
 
-.maincontainer {
-  margin: auto;
-}
-
 .container {
-  /* min-height: 100vh; */
+  min-height: 80vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("homePageSpices.jpg") center/cover no-repeat;
@@ -48,7 +44,7 @@ body {
   font-size: 14px;
 }
 
-.btn {
+.header-btn {
   background: #1aa37a;
   border: none;
   padding: 8px 14px;
@@ -62,6 +58,16 @@ body {
   align-items: center;
   gap: 10px;
   color: #fff;
+
+  .logo-name {
+    font-size: 24px;
+    color: #9edfe4;
+
+    .logo-sub-name {
+      font-size: 10px;
+      color: white;
+    }
+  }
 }
 
 .logo-wrap img {

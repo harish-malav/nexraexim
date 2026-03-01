@@ -24,7 +24,7 @@
   font-size: 14px;
 }
 
-.btn {
+.header-btn {
   background: #1aa37a;
   border: none;
   padding: 8px 14px;
@@ -37,6 +37,16 @@
   align-items: center;
   gap: 10px;
   color: #fff;
+
+  .logo-name {
+    font-size: 24px;
+    color: #9edfe4;
+
+    .logo-sub-name {
+      font-size: 10px;
+      color: white;
+    }
+  }
 }
 
 .logo-wrap img {
