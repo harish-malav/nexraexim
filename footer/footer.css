@@ -1,0 +1,151 @@
+/* --- FOOTER STYLING --- */
+.main-footer {
+  background-color: #692c3f;
+  /* Aapki navbar wala maroon color */
+  color: #ffffff;
+  padding: 60px 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Brand Info Styling */
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-wrap img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+}
+
+.footer-logo-wrap span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-logo-wrap p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footer-description {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #f2f2f2;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  background: #2e7d6b;
+  /* Aapki theme wala teal color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #1aa37a;
+  transform: translateY(-3px);
+}
+
+/* Quick Links Styling */
+.links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-column ul li {
+  margin-bottom: 12px;
+}
+
+.links-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.links-column ul li a:hover {
+  color: #8fe0c5;
+  padding-left: 5px;
+}
+
+/* Contact Info Styling */
+.contact-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.contact-box .icon {
+  font-size: 18px;
+}
+
+.contact-box p {
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+.bottom-left a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-upper {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
