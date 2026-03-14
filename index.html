@@ -9,6 +9,9 @@
 </head>
 <link rel="stylesheet" href="home/home.css">
 
+<link rel="stylesheet" href="/header/header.css">
+<link rel="stylesheet" href="footer/footer.css">
+
 <body>
 
     <div class="container">
@@ -25,9 +28,8 @@
             <nav> <a href="/">Home</a>
                 <a href="about.html">About</a>
                 <a href="products.html">Products</a>
-                <a href="/">Blogs</a>
-                <a href="/">FAQs</a>
-                <button class="header-btn">Contact Us</button>
+                <a href="#faq-section">FAQs</a>
+                <button class="header-btn" onclick="scrollToFooter()">Contact Us</button>
             </nav>
         </header>
 
@@ -42,7 +44,7 @@
 
             <div class="home-buttons">
                 <a href="products.html" class="btn primary">Explore Our Products</a>
-                <a href="#" class="btn secondary">Contact Us</a>
+                <a href="#" class="btn secondary" onclick="scrollToFooter()">Contact Us</a>
             </div>
         </div>
     </div>
@@ -232,7 +234,7 @@
         </div>
 
     </section>
-    <section class="faq-section">
+    <section class="faq-section" id="faq-section">
         <h2>Frequently Asked <span>Questions</span></h2>
 
         <div class="faq-item">
@@ -321,28 +323,30 @@
                     association.
                 </p>
                 <div class="footer-socials">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/nexra_exim?igsh=eGN6OHVuN2tjYmRz" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1882i6QHe5/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Nexraexim" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/harish-malav-2a952239b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
             <div class="footer-column links-column">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#faq-section">FAQs</a></li>
+                    <li><a href="#footer-contact" onclick="scrollToFooter()">Contact us</a></li>
                 </ul>
             </div>
 
-            <div class="footer-column contact-column">
+            <div class="footer-column contact-column" id="footer-contact">
                 <div class="contact-box">
                     <span class="icon">📍</span>
-                    <p>H.N.-81, Harish malav, devli arab, kota, rajasthan-324004</p>
+                    <p>81, Devli Arab, Kota, Rajasthan-324004</p>
                 </div>
                 <div class="contact-box">
                     <span class="icon">📞</span>
@@ -366,6 +370,7 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="index.js"></script>
 </body>
 
 </html>

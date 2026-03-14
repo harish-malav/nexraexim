@@ -40,11 +40,13 @@
 .footer-logo-wrap span {
   font-size: 20px;
   font-weight: 700;
+  color: #9edfe4;
 }
 
 .footer-logo-wrap p {
   font-size: 10px;
   font-weight: 400;
+  color: white;
 }
 
 .footer-description {

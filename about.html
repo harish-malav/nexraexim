@@ -28,9 +28,8 @@
                 <nav> <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="products.html">Products</a>
-                    <a href="">Blogs</a>
-                    <a href="">FAQs</a>
-                    <button class="header-btn">Contact Us</button>
+                    <a href="index.html#faq-section">FAQs</a>
+                    <button class="header-btn" onclick="scrollToFooter()">Contact Us</button>
                 </nav>
             </header>
 
@@ -171,15 +170,45 @@
 
                 <div class="management-grid">
                     <div class="manager-card">
-                        <div class="manager-img"></div>
-                        <h3>Harish Malav</h3>
-                        <p>Director</p>
+                        <div class="manager-left">
+                            <img src="About/img/harish.jpg" alt="Harish Malav" class="manager-img">
+                            <h3>Harish Malav</h3>
+                            <p class="manager-title">(Director)</p>
+                        </div>
+                        <div class="manager-right">
+                            <p>Harish malav founded Nexra exim with a singular mission to deliver quality spices & agro
+                                products to the discerning global market. With a hands-on approach to leadership Harish
+                                malav has been personally involved in every aspect of the business, from meticulous
+                                sourcing and processing to sales management and cultivating robust customer
+                                relationships.</p>
+                            <p>Enthusiasm of Harish malav towards his business made him a solid foundation of NEXRA
+                                EXIM, who's responsible for handling the overall operations of the company. In addition,
+                                involved in making strategic decisions for the enterprises. Customer-centric approach of
+                                Harish empowers buyers to make export choices that meet their operational objectives on
+                                the subject of manufacturing or purchasing procurement, facilitate export delivery
+                                across the world. Increase outcomes and decrease overall cost.</p>
+                        </div>
                     </div>
 
                     <div class="manager-card">
-                        <div class="manager-img"></div>
-                        <h3>Bhupendra Malav</h3>
-                        <p>Director</p>
+                        <div class="manager-left">
+                            <img src="About/img/bhupendra.jpg" alt="Bhupendra Malav" class="manager-img">
+                            <h3>Bhupendra Malav</h3>
+                            <p class="manager-title">(Operation manager)</p>
+                        </div>
+                        <div class="manager-right">
+                            <p>Being a valuable asset of the organization, Bhupendra has coupled himself with the
+                                determination of achieving excellence in various import and export activities.</p>
+                            <p>As a managing director, he is engaged in various activities related to production,
+                                distribution, and sourcing of fast-moving goods. In addition, responsible for-business
+                                development & management, optimizing product costing, leads negotiations, supply chain
+                                management, coordinates complex decision-making process, and last but not the least
+                                outcomes objections to capture new business opportunities</p>
+                            <p>He fulfils all the criteria of perfect knowledge and perfect information of domestic
+                                manufacturer, supplier, buyer, wholesaler, and distributor that ensures finest &
+                                cost-effective products to their clientele and help them in making intelligent
+                                judgments.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -203,10 +232,13 @@
                     association.
                 </p>
                 <div class="footer-socials">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/nexra_exim?igsh=eGN6OHVuN2tjYmRz" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1882i6QHe5/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Nexraexim" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/harish-malav-2a952239b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
@@ -215,16 +247,15 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="index.html#faq-section">FAQs</a></li>
+                    <li><a href="#footer-contact" onclick="scrollToFooter()">Contact us</a></li>
                 </ul>
             </div>
 
-            <div class="footer-column contact-column">
+            <div class="footer-column contact-column" id="footer-contact">
                 <div class="contact-box">
                     <span class="icon">📍</span>
-                    <p>H.N.-81, Harish malav, devli arab, kota, rajasthan-324004</p>
+                    <p>81, Devli Arab, Kota, Rajasthan-324004</p>
                 </div>
                 <div class="contact-box">
                     <span class="icon">📞</span>
@@ -248,6 +279,7 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
